@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.0.3] - 2022-12-08
+
+## Changed
+
+- Changing some colors around to make it more readable.
+
 ## [0.0.2] - 2022-12-08
 
 ## Changed
