@@ -2,7 +2,7 @@
   "name": "carnation-vscode-theme",
   "displayName": "Carnation",
   "description": "Carnation is a dark theme for VS Code with three variants: Carnation, Carnation Flat, and Carnation Frameless.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.73.0"
   },
