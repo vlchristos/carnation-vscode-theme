@@ -1,7 +1,7 @@
 {
-  "name": "TEMPLATE",
-  "displayName": "TEMPLATE",
-  "description": "TEMPLATE",
+  "name": "carnation-vscode-theme",
+  "displayName": "Carnation",
+  "description": "Carnation is a dark theme for VS Code with three variants: Carnation, Carnation Flat, and Carnation Frameless.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.73.0"
@@ -22,23 +22,27 @@
   "contributes": {
     "themes": [
       {
-        "label": "TEMPLATE",
+        "label": "Carnation",
         "uiTheme": "vs-dark",
-        "path": "./themes/TEMPLATE-theme.json"
+        "path": "./themes/carnation-theme.json"
       },
       {
-        "label": "TEMPLATE Frameless",
+        "label": "Carnation Frameless",
         "uiTheme": "vs-dark",
-        "path": "./themes/TEMPLATE-theme-frameless.json"
+        "path": "./themes/carnation-theme-frameless.json"
       },
       {
-        "label": "TEMPLATE Flat",
+        "label": "Carnation Flat",
         "uiTheme": "vs-dark",
-        "path": "./themes/TEMPLATE-theme-flat.json"
+        "path": "./themes/carnation-theme-flat.json"
       }
     ]
   },
   "dependencies": {
     "vsce": "^2.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vlchristos/carnation-vscode-theme.git"
   }
 }

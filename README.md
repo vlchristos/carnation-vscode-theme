@@ -1,7 +1,10 @@
-# VS Code Color Theme template
+# Carnation Theme for VS Code
 
-## Just a template for easy creation of a new color theme for VS Code
+A dark theme for VS Code with a touch of... carnation!
+There are three versions inclued: **Carnation**, **Carnation Frameless** and **Carnation Flat**.
 
-Instructions on how to use this coming soon.
+Syntax highlighting is borrowed from GitHub's VS Code theme as well as the the inspiration for the theme color scheme.
 
 ### **Enjoy!**
+
+:)

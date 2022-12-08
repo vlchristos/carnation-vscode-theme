@@ -4,19 +4,19 @@ import { syntax } from "./syntax";
 const fs = require("fs").promises;
 
 const generateThemeDefault = () => ({
-  name: "TEMPLATE",
+  name: "Carnation",
   colors: { ...theme({ scheme: "default" }) },
   tokenColors: [...syntax],
   semanticHighlighting: true,
 });
 const generateThemeFrameless = () => ({
-  name: "TEMPLATE Frameless",
+  name: "Carnation Frameless",
   colors: { ...theme({ scheme: "frameless" }) },
   tokenColors: [...syntax],
   semanticHighlighting: true,
 });
 const generateThemeFlat = () => ({
-  name: "TEMPLATE Flat",
+  name: "Carnation Flat",
   colors: { ...theme({ scheme: "flat" }) },
   tokenColors: [...syntax],
   semanticHighlighting: true,
@@ -26,15 +26,15 @@ fs.mkdir("./themes", { recursive: true })
   .then(() =>
     Promise.all([
       fs.writeFile(
-        "./themes/TEMPLATE-theme.json",
+        "./themes/carnation-theme.json",
         JSON.stringify(generateThemeDefault(), null, 2)
       ),
       fs.writeFile(
-        "./themes/TEMPLATE-theme-frameless.json",
+        "./themes/carnation-theme-frameless.json",
         JSON.stringify(generateThemeFrameless(), null, 2)
       ),
       fs.writeFile(
-        "./themes/TEMPLATE-theme-flat.json",
+        "./themes/carnation-theme-flat.json",
         JSON.stringify(generateThemeFlat(), null, 2)
       ),
     ])
