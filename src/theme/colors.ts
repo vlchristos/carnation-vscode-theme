@@ -2,7 +2,7 @@ import { ThemeOptions } from ".";
 import { getContrast50 } from "../utils/contrast";
 import { palette } from "./palette";
 
-const borderColor = palette.highlight;
+const borderColor = palette.highlightTransparent3;
 
 const defaultColors = {
   // Activity bar
@@ -66,7 +66,7 @@ const defaultColors = {
   "editorGroup.dropBackground": palette.accentTransparent1,
   "editorGroupHeader.tabsBackground": palette.primary,
   "editorGroupHeader.tabsBorder": false,
-  "editorHoverWidget.background": false,
+  "editorHoverWidget.background": palette.primary,
   "editorHoverWidget.border": borderColor,
   "editorHoverWidget.foreground": false,
   "editorHoverWidget.highlightForeground": false,
@@ -117,20 +117,20 @@ const defaultColors = {
   "list.deemphasizedForeground": false,
   "list.dropBackground": palette.accentTransparent1,
   "list.errorForeground": false,
-  "list.filterMatchBackground": false,
+  "list.filterMatchBackground": palette.accentTransparent1,
   "list.filterMatchBorder": false,
-  "list.focusAndSelectionOutline": false,
-  "list.focusBackground": palette.primary,
+  "list.focusAndSelectionOutline": palette.accent,
+  "list.focusBackground": palette.accentTransparent2,
   "list.focusForeground": palette.activeText,
   "list.focusHighlightForeground": palette.accent,
-  "list.focusOutline": palette.accent,
+  "list.focusOutline": palette.accentTransparent2,
   "list.highlightForeground": palette.accent,
-  "list.hoverBackground": palette.highlightTransparent1,
-  "list.hoverForeground": false,
+  "list.hoverBackground": palette.highlightTransparent3,
+  "list.hoverForeground": palette.activeText,
   "list.inactiveFocusBackground": palette.highlightTransparent1,
   "list.inactiveFocusOutline": false,
-  "list.inactiveSelectionBackground": palette.highlightTransparent3,
-  "list.inactiveSelectionForeground": palette.activeText,
+  "list.inactiveSelectionBackground": palette.highlight,
+  "list.inactiveSelectionForeground": getContrast50(palette.highlight),
   "list.inactiveSelectionIconForeground": false,
   "list.invalidItemForeground": false,
   "list.warningForeground": false,
@@ -173,7 +173,7 @@ const defaultColors = {
 
   // Picker Group
   "pickerGroup.border": borderColor,
-  "pickerGroup.foreground": palette.accent,
+  "pickerGroup.foreground": palette.textSecondary,
   "progressBar.background": palette.accent,
 
   // Quick Input
@@ -181,7 +181,7 @@ const defaultColors = {
   "quickInput.foreground": palette.text,
   "quickInputList.focusBackground": palette.highlight,
   "quickInputList.focusForeground": palette.activeText,
-  "quickInputList.focusIconForeground": palette.accent,
+  "quickInputList.focusIconForeground": palette.activeText,
 
   // Scrollbar
   "scrollbarSlider.activeBackground": palette.highlightTransparent3,
@@ -320,25 +320,28 @@ const frameless = {
 };
 
 const flat = {
-  ...frameless,
-  "activityBar.background": palette.primary,
+  ...defaultColors,
+  "activityBar.background": palette.secondary,
   "activityBar.border": palette.secondary,
-  "editor.background": palette.primary,
-  "editorGroup.border": palette.primary,
-  "editorGroupHeader.tabsBackground": palette.darkPrimary,
-  "panel.border": palette.secondary,
-  "sideBar.background": palette.primary,
-  "sideBar.border": palette.secondary,
-  "sideBarSectionHeader.background": palette.primary,
+  "editor.background": palette.secondary,
+  "editorGroup.border": palette.secondary,
+  "editorGroupHeader.tabsBackground": palette.primary,
+  "panel.border": palette.highlightTransparent1,
+  "sideBar.background": palette.secondary,
+  "sideBar.border": palette.highlightTransparent1,
+  "sideBarSectionHeader.background": palette.secondary,
   "sideBarSectionHeader.border": palette.secondary,
   "statusBar.border": palette.secondary,
-  "tab.activeBackground": palette.primary,
-  "tab.activeBorder": palette.primary,
+  "tab.activeBackground": palette.secondary,
+  "tab.activeBorder": palette.secondary,
   "tab.border": palette.primary,
-  "tab.inactiveBackground": palette.darkPrimary,
-  "titleBar.activeBackground": palette.primary,
+  "tab.inactiveBackground": palette.primary,
+  "titleBar.activeBackground": palette.secondary,
   "titleBar.border": palette.secondary,
+  "panel.background": palette.secondary,
   "terminal.background": palette.primary,
+  "statusBar.background": palette.secondary,
+  "statusBarItem.remoteBackground": palette.secondary,
 };
 
 export const getColors = ({ scheme }: ThemeOptions) => {
