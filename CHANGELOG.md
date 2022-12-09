@@ -1,5 +1,9 @@
 # Change Log
 
+## Changed
+
+- Changed the color of breadcrumbs to be more readable.
+
 ## [0.0.6] - 2022-12-09
 
 ## Added
