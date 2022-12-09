@@ -56,7 +56,7 @@ const defaultColors = {
   "editor.foreground": palette.text,
   "editor.lineHighlightBackground": palette.highlightTransparent3,
   "editor.lineHighlightBorder": false,
-  "editor.selectionBackground": palette.highlightTransparent3,
+  "editor.selectionBackground": palette.highlight,
   "editor.selectionForeground": false,
   "editor.selectionHighlightBackground": false,
   "editor.wordHighlightBackground": false,
