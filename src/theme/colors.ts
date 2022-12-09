@@ -25,7 +25,7 @@ const defaultColors = {
   "breadcrumb.activeSelectionForeground": palette.activeText,
   "breadcrumb.background": false,
   "breadcrumb.focusForeground": palette.text,
-  "breadcrumb.foreground": palette.highlight,
+  "breadcrumb.foreground": palette.inactiveText,
   "breadcrumbPicker.background": palette.primary,
 
   // Buttons
