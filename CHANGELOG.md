@@ -1,5 +1,14 @@
 # Change Log
 
+## [0.0.8] - 2022-12-09
+
+## Changed
+
+- Title bar color changed to match the theme better.
+- Hover/focus/active colors of sidebar changed to match the theme better.
+
+## [0.0.7] - 2022-12-09
+
 ## Changed
 
 - Changed the color of breadcrumbs to be more readable.
